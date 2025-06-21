@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>billathon.com - coming soon!</title>
-    <!-- Link to Font Awesome for Social Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Updated to Font Awesome 6.6.0 for fa-x-twitter support -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         /*
          * CSS for the landing page.
@@ -108,7 +108,7 @@
         /* Specific hover colors for social media icons - adjusted for light theme */
         .icons a .fa-facebook:hover { color: #3c8ce7; background-color: transparent; }
         .icons a .fa-linkedin:hover { color: #0099e6; background-color: transparent; }
-        .icons a .fa-twitter:hover { color: #1DA1F2; background-color: transparent; } /* Reverted to classic Twitter blue */
+        .icons a .fa-x-twitter:hover { color: #000000; background-color: transparent; } /* Black for X icon on hover */
         .icons a .fa-instagram:hover {
             /* Instagram gradient hover adapted for light background */
             background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -120,7 +120,6 @@
             background-color: transparent;
         }
         .icons a .fa-youtube:hover { color: #ff5252; background-color: transparent; }
-
 
         footer {
             margin-top: 40px;
@@ -203,31 +202,31 @@
         <section class="social-links">
             <h2>find us on:</h2>
             <div class="icons">
-                <!-- Facebook Icon - Updated link -->
-                <a href="https://www.facebook.com/billathon/" target="_blank" aria-label="Facebook">
+                <!-- Facebook Icon -->
+                <a href="https://www.facebook.com/billathon/" target="_blank" rel="noopener" aria-label="Facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
                 <!-- LinkedIn Icon -->
-                <a href="https://www.linkedin.com/company/billathon/about/” target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/billathon/about/" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <!-- Twitter Icon - Reverted to blue bird -->
-                <a href="https://x.com/billathoninc/" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
+                <!-- X Icon -->
+                <a href="https://x.com/billathonltd/" target="_blank" rel="noopener" aria-label="X">
+                    <i class="fab fa-x-twitter"></i>
                 </a>
                 <!-- Instagram Icon -->
-                <a href="https://www.instagram.com/billathon” target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/billathonltd" target="_blank" rel="noopener" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <!-- YouTube Icon -->
-                <a href="https://www.youtube.com/billathon” target="_blank" aria-label="YouTube">
+                <a href="https://www.youtube.com/@billathon" target="_blank" rel="noopener" aria-label="YouTube">
                     <i class="fab fa-youtube"></i>
                 </a>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2025 billathon.com. all rights reserved.</p>
+            <p>© 2025 billathon.com. all rights reserved.</p>
         </footer>
     </div>
 </body>
