@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>billathon.com - coming soon!</title>
-    <!-- Updated to Font Awesome 6.6.0 for fa-x-twitter support -->
+    <title>Billathon.com - coming soon!</title>
+    <!-- Font Awesome 6.6.0 for fa-x-twitter support -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         /*
@@ -16,22 +16,22 @@
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e0e6ed; /* Slightly darker light gray background */
+            background-color: #e0e6ed;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            color: #34495e; /* Medium-dark blue-gray for main text */
+            color: #34495e;
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
-            background-color: #ffffff; /* Pure white for the container */
+            background-color: #ffffff;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* More visible, subtle shadow */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
             text-align: center;
             max-width: 800px;
             width: 90%;
@@ -39,7 +39,7 @@
             box-sizing: border-box;
             position: relative;
             overflow: hidden;
-            border: 1px solid #d8dee9; /* Slightly darker light gray border */
+            border: 1px solid #d8dee9;
         }
 
         header, .social-links, footer {
@@ -48,17 +48,17 @@
         }
 
         header h1 {
-            color: #2c3e50; /* Distinct dark navy for the main title */
+            color: #2c3e50;
             margin-bottom: 10px;
             font-size: 3em;
             font-weight: 700;
-            letter-spacing: normal; /* Reset letter spacing */
-            text-shadow: none; /* Remove text shadow */
+            letter-spacing: normal;
+            text-shadow: none;
         }
 
         header p {
             font-size: 1.25em;
-            color: #617d98; /* Medium blue-gray for description */
+            color: #617d98;
             margin-bottom: 40px;
             max-width: 600px;
             margin-left: auto;
@@ -66,11 +66,11 @@
         }
 
         .social-links h2 {
-            color: #2c3e50; /* Distinct dark navy for section title */
+            color: #2c3e50;
             margin-bottom: 30px;
             font-size: 2em;
             font-weight: 600;
-            text-shadow: none; /* Remove text shadow */
+            text-shadow: none;
         }
 
         .icons {
@@ -82,9 +82,9 @@
         }
 
         .icons a {
-            color: #34495e; /* Default icon color: medium-dark blue-gray */
+            color: #34495e;
             font-size: 4em;
-            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add background-color to transition */
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
@@ -92,31 +92,27 @@
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            background-color: transparent; /* Transparent for initial state */
-            box-shadow: none; /* Removed initial shadow */
-            border: none; /* Removed initial border */
+            background-color: transparent;
+            box-shadow: none;
+            border: none;
         }
 
         .icons a:hover {
             transform: translateY(-10px) scale(1.05);
-            box-shadow: none; /* Explicitly remove shadow on hover */
-            filter: brightness(1.1); /* Slightly brighter on hover */
-            background-color: transparent; /* Explicitly remove background square on hover */
-            border: none; /* Ensure no border appears on hover */
+            box-shadow: none;
+            filter: brightness(1.1);
+            background-color: transparent;
+            border: none;
         }
 
-        /* Specific hover colors for social media icons - adjusted for light theme */
         .icons a .fa-facebook:hover { color: #3c8ce7; background-color: transparent; }
         .icons a .fa-linkedin:hover { color: #0099e6; background-color: transparent; }
-        .icons a .fa-x-twitter:hover { color: #000000; background-color: transparent; } /* Black for X icon on hover */
+        .icons a .fa-x-twitter:hover { color: #000000; background-color: transparent; }
         .icons a .fa-instagram:hover {
-            /* Instagram gradient hover adapted for light background */
             background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            /* Softer Instagram glow */
-            box-shadow: none; /* Removed shadow for Instagram hover */
-            /* Reset specific background-color for instagram as it uses gradient text */
+            box-shadow: none;
             background-color: transparent;
         }
         .icons a .fa-youtube:hover { color: #ff5252; background-color: transparent; }
@@ -124,10 +120,9 @@
         footer {
             margin-top: 40px;
             font-size: 0.95em;
-            color: #8c9cb6; /* Medium light gray for footer text */
+            color: #8c9cb6;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .container {
                 padding: 30px;
@@ -195,12 +190,12 @@
 <body>
     <div class="container">
         <header>
-            <h1>billathon.com</h1>
-            <p>who's running your bills?</p>
+            <h1>Billathon.com</h1>
+            <p>Who's running your bills?</p>
         </header>
 
         <section class="social-links">
-            <h2>find us on:</h2>
+            <h2>Find us on:</h2>
             <div class="icons">
                 <!-- Facebook Icon -->
                 <a href="https://www.facebook.com/billathon/" target="_blank" rel="noopener" aria-label="Facebook">
@@ -211,22 +206,22 @@
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <!-- X Icon -->
-                <a href="https://x.com/billathonltd/" target="_blank" rel="noopener" aria-label="X">
+                <a href="https://x.com/billathonHQ/" target="_blank" rel="noopener" aria-label="X">
                     <i class="fab fa-x-twitter"></i>
                 </a>
                 <!-- Instagram Icon -->
-                <a href="https://www.instagram.com/billathonltd" target="_blank" rel="noopener" aria-label="Instagram">
+                <a href="https://www.instagram.com/billathonHQ" target="_blank" rel="noopener" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <!-- YouTube Icon -->
-                <a href="https://www.youtube.com/@billathon" target="_blank" rel="noopener" aria-label="YouTube">
+                <a href="https://www.youtube.com/billathon" target="_blank" rel="noopener" aria-label="YouTube">
                     <i class="fab fa-youtube"></i>
                 </a>
             </div>
         </section>
 
         <footer>
-            <p>© 2025 billathon.com. all rights reserved.</p>
+            <p>© 2025 Billathon.com. all rights reserved.</p>
         </footer>
     </div>
 </body>
