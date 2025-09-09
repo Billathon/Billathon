@@ -121,11 +121,19 @@ nav ul li a:hover {
     color: var(--nav-text);
     background: none;
     border: none;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .theme-toggle:hover {
     color: var(--nav-text-hover);
+}
+
+.theme-toggle i {
+    transition: transform 0.3s;
+}
+
+[data-theme="light"] .theme-toggle i {
+    transform: rotate(180deg);
 }
 
 section {
