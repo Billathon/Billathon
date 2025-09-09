@@ -15,26 +15,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Dark mode toggle
 const toggleButton = document.querySelector('.theme-toggle');
 const html = document.documentElement;
-const icon = toggleButton.querySelector('i');
 
 // Load saved theme from localStorage
-if (localStorage.getItem('theme') === 'dark') {
-    html.setAttribute('data-theme', 'dark');
-    icon.classList.remove('fa-moon');
-    icon.classList.add('fa-star');
+if (localStorage.getItem('theme') === 'light') {
+    html.setAttribute('data-theme', 'light');
 }
 
 toggleButton.addEventListener('click', () => {
     const currentTheme = html.getAttribute('data-theme');
-    if (currentTheme === 'light') {
-        html.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-star');
-    } else {
+    if (currentTheme === 'dark') {
         html.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
-        icon.classList.remove('fa-star');
-        icon.classList.add('fa-moon');
+    } else {
+        html.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
     }
 });
