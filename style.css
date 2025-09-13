@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     /* Light mode variables */
     --bg-body: #e0e6ed;
@@ -71,7 +75,6 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    box-sizing: border-box;
     border: 1px solid var(--form-border);
 }
 
@@ -227,20 +230,23 @@ section p {
     overflow: hidden;
     max-width: 800px;
     margin: 40px auto;
+    width: 100%;
 }
 
 .testimonial-slider {
     display: flex;
+    width: 400%;
     transition: transform 0.5s ease-in-out;
 }
 
 .testimonial-item {
-    flex: 0 0 100%;
+    flex: 0 0 25%;
     padding: 20px;
     background: var(--testimonial-bg);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
+    box-sizing: border-box;
 }
 
 .testimonial-item p {
@@ -279,9 +285,9 @@ section p {
 }
 
 #slide1:checked ~ .testimonial-slider { transform: translateX(0); }
-#slide2:checked ~ .testimonial-slider { transform: translateX(-100%); }
-#slide3:checked ~ .testimonial-slider { transform: translateX(-200%); }
-#slide4:checked ~ .testimonial-slider { transform: translateX(-300%); }
+#slide2:checked ~ .testimonial-slider { transform: translateX(-25%); }
+#slide3:checked ~ .testimonial-slider { transform: translateX(-50%); }
+#slide4:checked ~ .testimonial-slider { transform: translateX(-75%); }
 #slide1:checked ~ .slider-nav label[for="slide1"],
 #slide2:checked ~ .slider-nav label[for="slide2"],
 #slide3:checked ~ .slider-nav label[for="slide3"],
@@ -427,5 +433,10 @@ footer ul li a {
 
     section h1, section h2 {
         font-size: 2em;
+    }
+
+    .testimonials {
+        max-width: 100%;
+        padding: 0 20px;
     }
 }
