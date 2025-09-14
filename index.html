@@ -6,13 +6,36 @@
     <meta name="description" content="Billathon.com - Expert bill negotiation and cost reduction for consumers and businesses. Save on utilities, medical bills, subscriptions, and more!">
     <meta name="keywords" content="bill negotiation, cost reduction, lower utility bills, medical bill reduction, subscription management, Billathon">
     <title>Billathon.com - Bill Negotiation Experts</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN with fallback -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <!-- AOS CDN with fallback -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
-        <a href="#home" class="logo">Billathon</a>
+        <div class="nav-left">
+            <a href="#home" class="logo">Billathon</a>
+            <div class="social-links">
+                <div class="icons">
+                    <a href="https://www.facebook.com/billathon/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/billathon/about/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/billathonHQ/" target="_blank" rel="noopener" aria-label="X">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/billathonHQ" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@billathon" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -32,29 +55,9 @@
     <div class="container">
         <section id="home" class="hero" data-aos="fade-up">
             <div class="parallax-bg"></div>
-            <h1>Run Your Bills </h1>
+            <h1>Slash Your Bills with Billathon</h1>
             <p>Save on utilities, medical bills, subscriptions, and more with our expert negotiation. Get started today!</p>
             <a href="#contact" class="cta-button">Get a Free Quote</a>
-            <div class="social-links" data-aos="fade-up" data-aos-delay="200">
-                <h2>Connect with Us</h2>
-                <div class="icons">
-                    <a href="https://www.facebook.com/billathon/" target="_blank" rel="noopener" aria-label="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/billathon/about/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://x.com/billathonHQ/" target="_blank" rel="noopener" aria-label="X">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/billathonHQ" target="_blank" rel="noopener" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@billathon" target="_blank" rel="noopener" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
         </section>
         <div class="section-divider"></div>
 
@@ -151,6 +154,30 @@
             </div>
             <p>Email: info@billathon.com | Phone: (123) 456-7890</p>
         </section>
+
+        <!-- Alternative: Social icons at bottom (uncomment to use, comment out top-left .social-links in nav) -->
+        <!--
+        <section class="social-links bottom-social" data-aos="fade-up">
+            <h2>Connect with Us</h2>
+            <div class="icons">
+                <a href="https://www.facebook.com/billathon/" target="_blank" rel="noopener" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/billathon/about/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/billathonHQ/" target="_blank" rel="noopener" aria-label="X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/billathonHQ" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@billathon" target="_blank" rel="noopener" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </section>
+        -->
     </div>
 
     <footer data-aos="fade-up">
@@ -164,7 +191,8 @@
         </ul>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="script.js"></script>
+    <!-- AOS and main script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
