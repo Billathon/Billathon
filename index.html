@@ -7,6 +7,7 @@
     <meta name="keywords" content="bill negotiation, cost reduction, lower utility bills, medical bill reduction, subscription management, Billathon">
     <title>Billathon.com - Bill Negotiation Experts</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,11 +28,11 @@
     </nav>
 
     <div class="container">
-        <section id="home" class="hero">
+        <section id="home" class="hero" data-aos="fade-up">
             <h1>Slash Your Bills with Billathon</h1>
             <p>Save on utilities, medical bills, subscriptions, and more with our expert negotiation. Get started today!</p>
             <a href="#contact" class="cta-button">Get a Free Quote</a>
-            <div class="social-links">
+            <div class="social-links" data-aos="fade-up" data-aos-delay="200">
                 <h2>Connect with Us</h2>
                 <div class="icons">
                     <a href="https://www.facebook.com/billathon/" target="_blank" rel="noopener" aria-label="Facebook">
@@ -53,37 +54,37 @@
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" data-aos="fade-up">
             <h2>About Billathon</h2>
             <p>At Billathon, we’re obsessed with saving you money. Founded in 2025, our mission is to take the stress out of bill management by negotiating lower rates on utilities, medical bills, subscriptions, and more for both consumers and businesses.</p>
             <p>Unlike app-based solutions, we offer personalized, hands-on service. Our expert negotiators leverage industry knowledge and proven strategies to secure the best deals, ensuring you keep more money in your pocket. Think of us as your bill-busting superpower—better than the rest, because we do the work for you.</p>
             <p>Why choose Billathon? We’ve saved our clients thousands by tackling even the toughest bills with precision and persistence. Let us run your bills so you can focus on what matters most.</p>
         </section>
 
-        <section id="services">
+        <section id="services" data-aos="fade-up">
             <h2>Our Services</h2>
             <p>We specialize in lowering your bills with expert negotiation. Explore how we can save you money.</p>
             <div class="services-grid">
-                <div class="service-item">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="100">
                     <h3>Utility Bill Negotiation</h3>
                     <p>Reduce your electricity, water, and internet bills with our proven negotiation tactics.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
                     <h3>Medical Bill Reduction</h3>
                     <p>We challenge overcharges and negotiate down medical expenses to save you thousands.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
                     <h3>Subscription Management</h3>
                     <p>Cancel or lower costs on subscriptions you no longer need or want.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="400">
                     <h3>Business Expense Optimization</h3>
                     <p>Slash operational costs for businesses by negotiating vendor contracts and more.</p>
                 </div>
             </div>
         </section>
 
-        <section id="testimonials">
+        <section id="testimonials" data-aos="fade-up">
             <h2>What Our Clients Say</h2>
             <p>Hear from those who’ve saved big with Billathon’s expert negotiation.</p>
             <div class="testimonials">
@@ -92,19 +93,19 @@
                 <input type="radio" name="slider" id="slide3">
                 <input type="radio" name="slider" id="slide4">
                 <div class="testimonial-slider">
-                    <div class="testimonial-item">
+                    <div class="testimonial-item" data-aos="fade-in">
                         <p>“Billathon saved me $1,200 on my medical bills! Their team was relentless in negotiating with providers.”</p>
                         <h4>Michael C.</h4>
                     </div>
-                    <div class="testimonial-item">
+                    <div class="testimonial-item" data-aos="fade-in">
                         <p>“My utility bills dropped by 25% after Billathon stepped in. I wish I’d found them sooner!”</p>
                         <h4>Nancy O.</h4>
                     </div>
-                    <div class="testimonial-item">
+                    <div class="testimonial-item" data-aos="fade-in">
                         <p>“They canceled my unused subscriptions and saved my business thousands. Professional and effective!”</p>
                         <h4>Robert S.</h4>
                     </div>
-                    <div class="testimonial-item">
+                    <div class="testimonial-item" data-aos="fade-in">
                         <p>“Billathon negotiated my internet bill down significantly. The process was seamless and stress-free.”</p>
                         <h4>Brenda F.</h4>
                     </div>
@@ -115,23 +116,33 @@
                     <label for="slide3"></label>
                     <label for="slide4"></label>
                 </div>
+                <div class="slider-controls">
+                    <button class="slider-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" data-aos="fade-up">
             <h2>Contact Us</h2>
             <p>Get in touch for a free consultation. Let us start saving you money today.</p>
-            <form action="#" method="post">
+            <form action="#" method="post" data-aos="fade-up" data-aos-delay="100">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" rows="5" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+            <div class="savings-calculator" data-aos="fade-up" data-aos-delay="200">
+                <h3>Estimate Your Savings</h3>
+                <input type="number" id="bill-amount" placeholder="Enter monthly bill amount ($)" min="0" required>
+                <button onclick="calculateSavings()">Calculate</button>
+                <p id="savings-result"></p>
+            </div>
             <p>Email: info@billathon.com | Phone: (123) 456-7890</p>
         </section>
     </div>
 
-    <footer>
+    <footer data-aos="fade-up">
         <p>© 2025 Billathon.com. All rights reserved.</p>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -142,6 +153,7 @@
         </ul>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
